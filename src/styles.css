@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-color: #007BC4;
+  --primary-color-dark: #004B7A;
+  --primary-color-light: #BDDDFF;
+  --text-color: #4B5563;
+  --text-color-light: #E5E5E5;
+}
+
+html{
+  background-color: rgb(240, 240, 240);
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  margin: 0 16px;
+}
+
+body{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+p{
+  margin: 0;
+}
+
+h3{
+  margin: 0 0 16px 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+button{
+  color: white;
+  background-color: var(--primary-color);
+  border-radius: 6px;
+  border: none;
+  padding: 16px;
+  font-size: 16px;
+}
+
+button:hover{
+  background-color: var(--primary-color-dark);
+}
+
+.two-column{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.card-background{
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px;
+}

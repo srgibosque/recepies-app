@@ -1,0 +1,15 @@
+.recepie-card{
+  display: flex;
+  border: 1px solid var(--text-color-light);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.recepie-card:last-child {
+  margin-bottom: 0;
+}
+
+.recepie-card:hover {
+  background-color: var(--primary-color-light);
+}
