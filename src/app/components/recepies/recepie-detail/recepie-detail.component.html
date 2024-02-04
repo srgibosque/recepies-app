@@ -1,16 +1,16 @@
 <div class="button-group">
   <button>Add to shopping list</button>
   <button>Edit recepie</button>
-  <button>Delete recepie</button>
+  <button class="btn-danger">Delete recepie</button>
 </div>
 
 <div class="detail-card">
   <div class="img-container">
-    <img src="../../../../assets/img/defaultImg.jpg" alt="">
+    <img src="../../../../assets/img/defaultImg.jpg" alt="{{recipe.name}}">
   </div>
 
   <div class="info">
-    <h3>Recepie 3</h3>
-    <p>Lorem Ipsum is a type of placeholder text commonly used in the printing and typesetting industry. It's used to fill space in a document to give an idea of how the final text layout will look without distracting the reader with meaningful content Lorem Ipsum is a type of placeholder text commonly used in the printing and typesetting industry. It's used to fill space in a document to give an idea of how the final text layout will look without distracting the reader with meaningful content</p>
+    <h3>{{recipe.name}}</h3>
+    <p>{{recipe.description}}</p>
   </div>
 </div>

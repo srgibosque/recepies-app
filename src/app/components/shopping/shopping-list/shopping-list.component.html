@@ -1,18 +1,16 @@
-<div>
+<div class="table-container">
+  <h3>Shopping list</h3>
   <app-shopping-edit></app-shopping-edit>
-  <hr>
-  <div class="table-container">
-    <h3>Shopping list</h3>
-    <table>
-      <tbody>
-          <tr *ngFor = "let ingredient of ingredients">
-            <td>
-              <a>
-                {{ingredient.name}} ({{ingredient.amount}})
-              </a>
-            </td>
-          </tr>
-      </tbody>
-    </table>
-  </div>
+  <table>
+    <tbody>
+        <tr *ngFor = "let ingredient of ingredients">
+          <td>
+            <a>
+              {{ingredient.name}} ({{ingredient.amount}})
+            </a>
+          </td>
+        </tr>
+    </tbody>
+  </table>
 </div>
+

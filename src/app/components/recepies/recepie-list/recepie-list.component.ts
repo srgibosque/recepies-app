@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 import { Recepie } from '../../../models/recepie.model';
 
@@ -9,6 +9,7 @@ import { Recepie } from '../../../models/recepie.model';
 })
 export class RecepieListComponent implements OnInit {
   public recepies: Recepie[] = [];
+  @Output() recepieWasSelected = new EventEmitter<Recepie>();
 
   constructor(){}
 
@@ -18,5 +19,9 @@ export class RecepieListComponent implements OnInit {
       new Recepie('Recepie 2', 'This is the description', '../../../../assets/img/defaultImg.jpg'),
       new Recepie('Recepie 3', 'This is the description', '../../../../assets/img/defaultImg.jpg'),
     ];
+  }
+
+  onRecepieSelected(recepie: Recepie){
+    this.recepieWasSelected.emit(recepie);
   }
 }

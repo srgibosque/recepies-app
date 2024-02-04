@@ -1,0 +1,19 @@
+form{
+  display: flex;
+  gap: 12px;
+}
+
+#name {
+  flex:1;
+}
+
+#amount{
+  flex: 1
+}
+
+.button-group{
+  flex: 1;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}

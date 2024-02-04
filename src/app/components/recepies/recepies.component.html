@@ -1,9 +1,15 @@
 <div class="two-column">
   <div class="card-background">
-    <app-recepie-list></app-recepie-list>
+    <app-recepie-list (recepieWasSelected) = "selectedRecepie = $event"></app-recepie-list>
   </div>
 
   <div class="card-background">
-    <app-recepie-detail></app-recepie-detail>
+    <app-recepie-detail 
+      *ngIf = "selectedRecepie; else infoText" 
+      [recipe] = "selectedRecepie"></app-recepie-detail>
+      
+    <ng-template #infoText>
+      <p>Please select a recipe</p>
+    </ng-template>
   </div>
 </div>
