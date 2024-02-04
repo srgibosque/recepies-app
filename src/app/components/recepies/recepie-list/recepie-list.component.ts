@@ -14,9 +14,9 @@ export class RecepieListComponent implements OnInit {
 
   ngOnInit(){
     this.recepies = [
-      new Recepie('Recepie 1', 'This is the description', '../src/assets/img/image1.jpg'),
-      new Recepie('Recepie 2', 'This is the description', '../src/assets/img/image1.jpg'),
-      new Recepie('Recepie 3', 'This is the description', '../src/assets/img/image1.jpg'),
+      new Recepie('Recepie 1', 'This is the description', '../../../../assets/img/defaultImg.jpg'),
+      new Recepie('Recepie 2', 'This is the description', '../../../../assets/img/defaultImg.jpg'),
+      new Recepie('Recepie 3', 'This is the description', '../../../../assets/img/defaultImg.jpg'),
     ];
   }
 }

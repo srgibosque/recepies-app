@@ -1,0 +1,26 @@
+.table-container{
+  background-color: white;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 32px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px; 
+}
+
+td {
+  border: 1px solid var(--text-color-light);
+  padding: 12px;
+}
+
+td:hover{
+ background-color: var(--primary-color-light);
+}
+
+td a{
+  display: block;
+  height: 100%;
+}
