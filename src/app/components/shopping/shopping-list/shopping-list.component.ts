@@ -7,16 +7,24 @@ import { Ingridient } from '../../../models/ingredient.model';
   styleUrl: './shopping-list.component.css'
 })
 export class ShoppingListComponent implements OnInit {
-  public ingredients: Ingridient[] = [];
+  public ingredients: Ingridient[] = [
+    new Ingridient('Apple', 5),
+    new Ingridient('Tomato', 3),
+    new Ingridient('Banana', 2),
+  ];
 
   constructor() {}
 
 
- ngOnInit(): void {
-     this.ingredients = [
-      new Ingridient('Apple', 5),
-      new Ingridient('Tomato', 3),
-      new Ingridient('Banana', 2),
-     ];
+  ngOnInit(): void {
+    //  this.ingredients = [
+    //   new Ingridient('Apple', 5),
+    //   new Ingridient('Tomato', 3),
+    //   new Ingridient('Banana', 2),
+    //  ];
+ }
+
+ onIngredientAdded(ingredient: Ingridient): void {
+  this.ingredients.push(ingredient);
  }
 }

@@ -1,6 +1,6 @@
 <div class="table-container">
   <h3>Shopping list</h3>
-  <app-shopping-edit></app-shopping-edit>
+  <app-shopping-edit (ingridientAdded) = "onIngredientAdded($event)"></app-shopping-edit>
   <table>
     <tbody>
         <tr *ngFor = "let ingredient of ingredients">
