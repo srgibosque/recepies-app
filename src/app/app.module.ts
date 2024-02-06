@@ -10,6 +10,8 @@ import { RecepieDetailComponent } from './components/recepies/recepie-detail/rec
 import { RecepieItemComponent } from './components/recepies/recepie-list/recepie-item/recepie-item.component';
 import { ShoppingListComponent } from './components/shopping/shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './components/shopping/shopping-edit/shopping-edit.component';
+import { RecipeService } from './services/recipe.service';
+import { ShoppingListService } from './services/shopping-list.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { ShoppingEditComponent } from './components/shopping/shopping-edit/shopp
     AppRoutingModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    RecipeService,
+    ShoppingListService,
   ],
   bootstrap: [AppComponent]
 })

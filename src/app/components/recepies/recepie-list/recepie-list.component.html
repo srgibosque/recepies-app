@@ -2,8 +2,7 @@
 <button>New Recepie</button>
 
 <app-recepie-item 
-  *ngFor ="let recepieEl of recepies"
-  [recepie] = "recepieEl"
-  (recepieSelected) = "onRecepieSelected(recepieEl)">
+  *ngFor ="let recepieEl of recipes"
+  [recipe] = "recepieEl">
 
 </app-recepie-item>
