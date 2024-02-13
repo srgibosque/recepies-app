@@ -1,5 +1,5 @@
 <div class="button-group">
-  <button>Add to shopping list</button>
+  <button (click)="onAddToShoppingList()">Add to shopping list</button>
   <button>Edit recepie</button>
   <button class="btn-danger">Delete recepie</button>
 </div>
@@ -12,5 +12,8 @@
   <div class="info">
     <h3>{{recipe.name}}</h3>
     <p>{{recipe.description}}</p>
+    <ul>
+      <li *ngFor = "let ingredient of recipe.ingredients">{{ingredient.name}} - {{ingredient.amount}}</li>
+    </ul>
   </div>
 </div>
