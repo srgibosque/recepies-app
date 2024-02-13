@@ -1,0 +1,37 @@
+nav{
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li{
+  margin: 0;
+  padding: 0;
+}
+
+nav li a{
+  display: inline-block;
+  padding: 24px;
+}
+
+nav li a:hover{
+background-color: var(--primary-color);
+ color: white;
+ border-radius: 8px;
+}
+
+.brand:hover{
+  background-color: white;
+}

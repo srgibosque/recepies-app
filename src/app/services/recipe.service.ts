@@ -12,7 +12,6 @@ export class RecipeService {
   constructor(private shoppingListService: ShoppingListService) { }
 
   recipeSelected = new EventEmitter<Recepie>();
-  // toShoppingList = new EventEmitter<Ingridient[]>();
 
   private recipes: Recepie[] = [
     new Recepie('Recepie 1', 
