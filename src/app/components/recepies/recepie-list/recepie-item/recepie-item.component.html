@@ -1,5 +1,5 @@
-<a href="#" (click)="onSelected()">
-  <div class="recepie-card">
+<a [routerLink] = "[index]">
+  <div class="recepie-card" routerLinkActive = "active">
     <div class="recepie-info">
       <h3>{{recipe.name}}</h3>
       <p>{{recipe.description}}</p>

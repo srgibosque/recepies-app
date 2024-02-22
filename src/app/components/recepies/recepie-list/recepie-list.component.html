@@ -1,8 +1,9 @@
 
-<button>New Recepie</button>
+<button (click) = "onNewRecipe()">New Recepie</button>
 
 <app-recepie-item 
-  *ngFor ="let recepieEl of recipes"
-  [recipe] = "recepieEl">
+  *ngFor ="let recepieEl of recipes; let i = index"
+  [recipe] = "recepieEl"
+  [index] = "i">
 
 </app-recepie-item>
