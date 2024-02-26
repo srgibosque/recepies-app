@@ -9,6 +9,7 @@ import { Ingridient } from '../models/ingredient.model';
 export class ShoppingListService {
 
   ingredientsChanges = new Subject<Ingridient[]>();
+  startedEditing = new Subject<number>();
 
   private ingredients: Ingridient[] = [
     new Ingridient('Apple', 5),
@@ -20,6 +21,10 @@ export class ShoppingListService {
 
   getIngredients(){
     return this.ingredients.slice();
+  }
+
+  getIngredient(index: number): Ingridient{
+    return this.ingredients[index];
   }
 
   addIngredient(ingredient: Ingridient){

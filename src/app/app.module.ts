@@ -14,6 +14,7 @@ import { RecipeService } from './services/recipe.service';
 import { ShoppingListService } from './services/shopping-list.service';
 import { RecipeStartComponent } from './components/recepies/recipe-start/recipe-start.component';
 import { RecipeEditComponent } from './components/recepies/recipe-edit/recipe-edit.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { RecipeEditComponent } from './components/recepies/recipe-edit/recipe-ed
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [
     provideClientHydration(),

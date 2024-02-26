@@ -1,8 +1,25 @@
-<form>
-  <input type="text" id="name" placeholder="Enter ingredient name" #nameInput>
-  <input type="number" id="amount" placeholder="0" #amountInput>
+<form (ngSubmit) = "onAddItem(f)" #f="ngForm">
+  <input 
+    type="text" 
+    id="name" 
+    placeholder="Enter ingredient name" 
+    name="name"
+    ngModel
+    required
+    >
+
+  <input 
+    type="number" 
+    id="amount" 
+    placeholder="0"
+    name="amount"
+    ngModel
+    required
+    pattern = "^[1-9]+[0-9]*$"
+    >
+
   <div class="button-group">
-    <button type="button" (click) = onAddItem()>Add ingredient</button>
+    <button type="submit" [disabled] = "!f.valid">Add ingredient</button>
     <button type="button">Clear</button>
     <button type="button" class="btn-danger">Delete</button>
   </div>

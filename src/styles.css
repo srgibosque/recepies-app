@@ -45,6 +45,11 @@ button:hover{
   background-color: var(--primary-color-dark);
 }
 
+button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .btn-danger{
   background-color: #E91C1C;
 }
