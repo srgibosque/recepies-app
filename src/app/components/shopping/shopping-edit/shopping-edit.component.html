@@ -20,7 +20,7 @@
 
   <div class="button-group">
     <button type="submit" [disabled] = "!f.valid">{{editMode ? 'Update' : 'Add Ingredient'}}</button>
-    <button type="button">Clear</button>
-    <button type="button" class="btn-danger">Delete</button>
+    <button type="button" (click)="onClear()">Clear</button>
+    <button type="button" class="btn-danger" (click)="onDelete()" *ngIf = "editMode">Delete</button>
   </div>
 </form>
