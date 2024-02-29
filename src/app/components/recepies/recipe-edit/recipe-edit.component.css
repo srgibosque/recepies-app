@@ -1,0 +1,21 @@
+input{
+  margin: 0;
+}
+
+.form-controls{
+  margin-top: 12px;
+}
+
+.form-controls > input {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.ingredient-row{
+  display: flex;
+}
+
+input[type="number"]{
+   margin: 0 12px;
+}

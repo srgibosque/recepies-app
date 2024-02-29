@@ -27,6 +27,10 @@ h3{
   margin: 0 0 12px 0;
 }
 
+h4{
+  margin: 0 0 12px 0;
+}
+
 a {
   text-decoration: none;
   color: var(--text-color);
@@ -39,6 +43,7 @@ button{
   border: none;
   padding: 16px;
   font-size: 16px;
+  margin: 0 12px 0 0;
 }
 
 button:hover{
@@ -59,6 +64,17 @@ button[disabled] {
 }
 
 input {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid var(--text-color-light);
+  border-radius: 8px;
+}
+
+textarea {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   color: var(--text-color);
