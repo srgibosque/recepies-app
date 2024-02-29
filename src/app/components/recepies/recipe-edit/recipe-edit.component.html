@@ -1,14 +1,14 @@
-<form>
+<form [formGroup] ="recipeForm" (ngSubmit) ="onSubmit()">
   <div>
     <button type="submit">Save</button>
     <button type="button" class="btn-danger">Cancel</button>
   </div>
 
   <div class="form-controls">
-    <input type="text" placeholder="Name">
-    <input type="text" placeholder="Image url">
+    <input type="text" placeholder="Name" formControlName="name">
+    <input type="text" placeholder="Image url" formControlName="imagePath">
     <img src="" alt="">
-    <Textarea>Description</Textarea>
+    <textarea type="text" formControlName="description" rows="4">Description</textarea>
     <h4>Ingredients:</h4>
     <div class="ingredient-row">
       <input type="text" placeholder="Ingredient">
